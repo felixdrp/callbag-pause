@@ -1,5 +1,4 @@
-const pausable = paused => source => {
-  // let paused = externalControlPause
+const pause = paused => source => {
   return (type, data) => {
     if (type === 0) {
       const sink = data
@@ -31,4 +30,4 @@ const pausable = paused => source => {
   }
 }
 
-export default pausable;
+export default pause;
