@@ -1,0 +1,32 @@
+{
+  "name": "callbag-pause",
+  "version": "1.0.0",
+  "description": "👜 Callbag Pause let you pause/resume your callbag stream with a boolean var.",
+  "author": "Felix Rodriguez Perez (felixdrp)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixdrp/callbag-pause.git"
+  },
+  "main": "index.cjs.js",
+  "module": "index.js",
+  "scripts": {
+    "example": "node --experimental-modules example.mjs",
+    "build": "rollup $npm_package_module -o $npm_package_main --f cjs",
+    "pretest": "npm run build",
+    "test": "tape test.js",
+    "prepare": "npm test"
+  },
+  "license": "MIT",
+  "keywords": [
+    "callbag, pause"
+  ],
+  "devDependencies": {
+    "callbag-interval": "^1.1.0",
+    "callbag-mock": "^2.3.0",
+    "callbag-pipe": "^1.1.1",
+    "callbag-subscribe": "^1.5.0",
+    "callbag-take": "^1.0.0",
+    "rollup": "^0.63.4",
+    "tape": "^4.9.0"
+  }
+}
